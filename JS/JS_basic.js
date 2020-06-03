@@ -1,0 +1,1 @@
+var currentHealth = 100;
