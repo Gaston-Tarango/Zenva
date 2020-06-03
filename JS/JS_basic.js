@@ -1,4 +1,9 @@
 let maxHealth = 200;
-var currentHealth = 100;
-let isGameOver = false;
-isGameOver = true;
+let currentHealth = 100;
+
+if (true) {
+    let isGameOver = false;
+    let isNotGameOver = true;
+}
+
+console.log(isNotGameOver);
