@@ -11,3 +11,9 @@ console.log(isNotGameOver);
 
 let level = 1;
 let title = `Level ${level}`;
+
+//Arrays
+
+var inventory = ['shirt', 'axe', 'bread'];
+let shirt = inventory[0];
+inventory[2] = 'cheese';
