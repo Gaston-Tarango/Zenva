@@ -23,3 +23,12 @@ length = inventory[0].length;
 
 inventory.push('water');
 var water = inventory.pop();
+
+var levels = [
+    [1.1, 1.2, 1.3],
+    [2.1, 2.2, 2.3, 2.4],
+    [3.1, 3.2]
+];
+
+var firstWorld = levels[0];
+var firstLevel = levels[0][1];
