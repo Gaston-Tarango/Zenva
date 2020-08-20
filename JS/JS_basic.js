@@ -17,3 +17,9 @@ let title = `Level ${level}`;
 var inventory = ['shirt', 'axe', 'bread'];
 let shirt = inventory[0];
 inventory[2] = 'cheese';
+
+var length = inventory.length;
+length = inventory[0].length;
+
+inventory.push('water');
+var water = inventory.pop();
