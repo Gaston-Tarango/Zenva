@@ -36,12 +36,19 @@ var firstLevel = levels[0][1];
 
 //Functions
 
-var currentHealth = 50;
-var healAmount = 10;
+// var currentHealth = 50;
+// var healAmount = 10;
+//
+// function heal() {
+//     currentHealth += healAmount;
+// }
 
-function heal() {
+var currentHealth = 50;
+
+function heal(healAmount = 10) {
     currentHealth += healAmount;
 }
 
 heal();
+heal(30);
 
