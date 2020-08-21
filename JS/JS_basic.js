@@ -54,3 +54,16 @@ function heal(healAmount = 10) {
 heal();
 heal(30);
 
+// if statements
+
+var keyPressed = 'l';
+var xPos = 0;
+if (keyPressed == 'l') {
+    xPos -= 1;
+} else if (keyPressed == 'r') {
+    xPos += 1;
+} else {
+    xPos = 0;
+}
+
+
