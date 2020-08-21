@@ -1,6 +1,6 @@
-// let maxHealth = 200;
-// // let currentHealth = 100;
-// let numberOfLives = 3;
+let maxHealth = 200;
+// let currentHealth = 100;
+let numberOfLives = 3;
 
 if (true) {
     let isGameOver = false;
@@ -46,7 +46,9 @@ var firstLevel = levels[0][1];
 var currentHealth = 50;
 
 function heal(healAmount = 10) {
-    currentHealth += healAmount;
+    var newHealth = currentHealth += healAmount;
+    currentHealth = newHealth > 100 ? maxHealth : newHealth;
+    return (currentHealth / maxHealth) * 100;
 }
 
 heal();
