@@ -58,9 +58,14 @@ heal(30);
 
 var keyPressed = 'l';
 var xPos = 0;
-if (keyPressed == 'l') {
-    xPos -= 1;
-} else if (keyPressed == 'r') {
+let endPos = 5;
+
+if (keyPressed == 'r') {
+    if (xPos < endPos) {
+        xPos += 1;
+    }
+
+} else if (keyPressed == 'l') {
     xPos += 1;
 } else {
     xPos = 0;
