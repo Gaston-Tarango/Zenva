@@ -89,3 +89,19 @@ while (!isGameOver) {
     }
 }
 
+while (xPos < isGameOver) {
+    xPos++;
+    if (xPos == enemyPos) {
+        break;
+    }
+}
+
+function movePlayer() {
+    while (xPos < enemyPos) {
+        if (xPos == enemyPos) {
+            return;
+        }
+    }
+
+}
+
