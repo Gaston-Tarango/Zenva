@@ -71,4 +71,13 @@ if (keyPressed == 'r') {
     xPos = 0;
 }
 
+// While loops
+
+let endPos =5;
+var pos = 0;
+
+while (pos < endPos) {
+    pos++;
+}
+
 
