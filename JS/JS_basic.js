@@ -118,3 +118,15 @@ var finalString = "In my inventory, i have ";
 items.forEach(function (element) {
     finalString += element + " ";
 });
+
+
+//Objects
+
+var gameCharacter = {
+    name: "Black Flame",
+    xPos: 0,
+    items: ["Knife", "Food"],
+    move: function (x) {
+        this.xPos += x;
+    }
+};
