@@ -130,3 +130,15 @@ var gameCharacter = {
         this.xPos += x;
     }
 };
+
+var name = gameCharacter.name;
+
+gameCharacter.items = ['axe', 'bread'];
+gameCharacter.move(5);
+var x = gameCharacter.xPos;
+
+gameCharacter.yPos = 0;
+gameCharacter.move = function (x,y) {
+    this.xPos += x;
+    this.yPos += y;
+};
