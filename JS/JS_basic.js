@@ -122,8 +122,17 @@ items.forEach(function (element) {
 
 //Objects
 
-var gameCharacter = {
+var gameCharacter;
+gameCharacter = {
     name: "Black Flame",
+    class: "swordsman",
+    health: 100,
+    get title() {
+        return this.name + " the " + this.class
+    },
+    set maxHealth(h) {
+        this.health = h;
+    },
     xPos: 0,
     items: ["Knife", "Food"],
     move: function (x) {
@@ -131,12 +140,14 @@ var gameCharacter = {
     }
 };
 
-var i = 5;
-var j = i;
-i = 10;
+gameCharacter.title;
 
-var gc = gameCharacter;
-gc.name = "cola";
+// var i = 5;
+// var j = i;
+// i = 10; i =10 j = 5
+//
+// var gc = gameCharacter;
+// gc.name = "cola";
 
 var name = gameCharacter.name;
 
