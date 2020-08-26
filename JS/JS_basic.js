@@ -131,6 +131,13 @@ var gameCharacter = {
     }
 };
 
+var i = 5;
+var j = i;
+i = 10;
+
+var gc = gameCharacter;
+gc.name = "cola";
+
 var name = gameCharacter.name;
 
 gameCharacter.items = ['axe', 'bread'];
@@ -142,3 +149,5 @@ gameCharacter.move = function (x,y) {
     this.xPos += x;
     this.yPos += y;
 };
+
+
