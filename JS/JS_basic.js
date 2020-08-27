@@ -154,20 +154,18 @@ function gameCharacter(name, xPos, health) {
 }
 
 var gc1 = new gameCharacter("black flame", 0, 100);
-var name = gc1.name;
-gc1.health = 150;
-gc1.move(10);
+gc1.yPos = 5;
 var gc2 = new gameCharacter("cola", 5, 150);
 
 var gc1 = {
-    name: "taco",
+    name: "black flame",
     xPos: 0,
     health: 100
 }
 var gc2 = {
-    name: "tam",
-    xPos: 0,
-    health: 100
+    name: "cola",
+    xPos: 5,
+    health: 150
 }
 
 
