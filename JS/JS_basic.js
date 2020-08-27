@@ -157,6 +157,16 @@ var gc1 = new gameCharacter("black flame", 0, 100);
 gc1.yPos = 5;
 var gc2 = new gameCharacter("cola", 5, 150);
 
+gameCharacter.prototype.class = "human";
+
+var heal = function (amount) {
+        this.health += amount;
+}
+gameCharacter.prototype.heal = heal;
+gc1.heal(5);
+gc1.heal(10);
+
+
 var gc1 = {
     name: "black flame",
     xPos: 0,
