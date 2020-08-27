@@ -141,6 +141,18 @@ gameCharacter = {
 };
 
 gameCharacter.title;
+gameCharacter.maxHealth = 150;
+
+function gameCharacter(name, xPos, health) {
+    this.name = name;
+    this.xPos = xPos;
+    this.health = health;
+    this.move = function (x) {
+
+    }
+}
+
+
 
 // var i = 5;
 // var j = i;
@@ -160,5 +172,7 @@ gameCharacter.move = function (x,y) {
     this.xPos += x;
     this.yPos += y;
 };
+
+
 
 
