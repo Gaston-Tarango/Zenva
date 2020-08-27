@@ -148,10 +148,15 @@ function gameCharacter(name, xPos, health) {
     this.xPos = xPos;
     this.health = health;
     this.move = function (x) {
-
+        this.xPos += x;
     }
+    this.class = "swordsman"
 }
 
+var gc1 = new gameCharacter("black flame", 0, 100);
+var name = gc1.name;
+gc1.health = 150;
+gc1.move(10);
 
 
 // var i = 5;
