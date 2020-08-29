@@ -198,6 +198,21 @@ gameCharacter.move = function (x,y) {
     this.yPos += y;
 };
 
+//Classes
+
+constructor(name, xPos, health) {
+    this.name = name;
+    this.xPosition = xPos;
+    this.health = health;
+}
+
+move(xPos) {
+    this.xPosition += xPos;
+}
+
+}
+
+
 
 
 
