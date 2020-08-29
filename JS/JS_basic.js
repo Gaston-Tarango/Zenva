@@ -200,14 +200,11 @@ gameCharacter.move = function (x,y) {
 
 //Classes
 
-constructor(name, xPos, health) {
+class gameCharacter {
+    function gameCharater(name, xPos, health) {
     this.name = name;
     this.xPosition = xPos;
     this.health = health;
-}
-
-move(xPos) {
-    this.xPosition += xPos;
 }
 
 }
