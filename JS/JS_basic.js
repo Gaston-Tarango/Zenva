@@ -164,7 +164,7 @@ var heal = function (amount) {
 }
 gameCharacter.prototype.heal = heal;
 gc1.heal(5);
-gc1.heal(10);
+gc2.heal(10);
 
 
 var gc1 = {
