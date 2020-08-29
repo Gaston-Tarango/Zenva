@@ -213,9 +213,18 @@ move(x) {
 
 }
 
+class humanCharacter extends gameCharacter{
+    constructor(name, xPos, health) {
+        super(name, xPos, health);
+        this.classification = "Human"
+    }
+}
+
 var gc1 = gameCharacter('black flame', 0, 100);
 gc1.move(5);
 gc1.name;
+
+
 
 
 
