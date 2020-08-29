@@ -201,13 +201,21 @@ gameCharacter.move = function (x,y) {
 //Classes
 
 class gameCharacter {
-    function gameCharater(name, xPos, health) {
+    constructor(name, xPos, health) {
     this.name = name;
     this.xPosition = xPos;
     this.health = health;
 }
 
+move(x) {
+        this.xPos += x;
 }
+
+}
+
+var gc1 = gameCharacter('black flame', 0, 100);
+gc1.move(5);
+gc1.name;
 
 
 
