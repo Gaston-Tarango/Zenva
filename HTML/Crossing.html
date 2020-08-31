@@ -20,9 +20,19 @@
         let screenWidth = 1000;
         let screenHeight = 500;
 
+        class GameCharacter {
+            constructor(x , y, width, height, color) {
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
+                this.color = color;
+            }
+        }
+
         var step = function ( ) {
             window.requestAnimationFrame(step);
-        }
+        };
 
         step();
     </script>
