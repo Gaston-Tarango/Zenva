@@ -33,8 +33,11 @@
         var rectangle = new GameCharacter(50, 50, 50, 50, "rgb(0, 0, 255)");
 
         var draw = function () {
-            ctx.clearRect(0, 0, screenWidth, screenHeight)
-        }
+            ctx.clearRect(0, 0, screenWidth, screenHeight);
+
+            ctx.fillStyle = rectangle.color;
+            ctx.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+        };
 
         var step = function ( ) {
             window.requestAnimationFrame(step);
