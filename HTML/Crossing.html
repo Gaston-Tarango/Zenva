@@ -39,12 +39,22 @@
 
         ];
 
-        var draw = function () {
+        var draw = function() {
             ctx.clearRect(0, 0, screenWidth, screenHeight);
 
-            ctx.fillStyle = rectangle.color;
-            ctx.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+            enemies.forEach(function(element){
+                ctx.fillStyle = element.color;
+                ctx.fillRect(element.x, element.y, element.width, element.height);
+            });
         };
+        var draw = function() {
+            ctx.clearRect(0, 0, screenWidth, screenHeight);
+
+            enemies.forEach(function(element){
+                ctx.fillStyle = element.color;
+                ctx.fillRect(element.x, element.y, element.width, element.height);
+            });
+        }
 
         var step = function ( ) {
             window.requestAnimationFrame(step);
