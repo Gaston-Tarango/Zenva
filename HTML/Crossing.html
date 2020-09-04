@@ -56,10 +56,15 @@
                 ctx.fillRect(element.x, element.y, element.width, element.height);
             });
         };
-        JavaScript
+
         var update = function() {
             enemies[0].move(0,2);
         };
+        var step = function () {
+            update();
+            draw()
+        }
+
 
         var draw = function() {
             ctx.clearRect(0, 0, screenWidth, screenHeight);
