@@ -28,6 +28,11 @@
                 this.height = height;
                 this.color = color;
             }
+            JavaScript
+            move(xAmount, yAmount){
+                this.x += xAmount;
+                this.y += yAmount;
+            }
         }
 
         var rectangle = new GameCharacter(50, 50, 50, 50, "rgb(0, 0, 255)");
@@ -47,6 +52,11 @@
                 ctx.fillRect(element.x, element.y, element.width, element.height);
             });
         };
+        JavaScript
+        var update = function() {
+            enemies[0].move(0,2);
+        };
+
         var draw = function() {
             ctx.clearRect(0, 0, screenWidth, screenHeight);
 
