@@ -21,17 +21,21 @@
         let screenHeight = 500;
 
         class GameCharacter {
-            constructor(x , y, width, height, color) {
+            constructor(x , y, width, height, color, speed) {
                 this.x = x;
                 this.y = y;
                 this.width = width;
                 this.height = height;
                 this.color = color;
+                this.speed = speed;
             }
-            JavaScript
-            move(xAmount, yAmount){
-                this.x += xAmount;
-                this.y += yAmount;
+
+            moveVertically() {
+                this.y += this.speed;
+            }
+
+            moveHorizontally() {
+                this.x += this.speed;
             }
         }
 
@@ -40,7 +44,7 @@
         var enemies = [
             new GameCharacter(200, 50, width, width, "rgb(0, 0, 255)", 2),
             new GameCharacter(450, screenHeight - 100, width, width, "rgb(0, 0, 255)", 2),
-            new GameCharacter(700, 50, width, width, "rgb(0, 0, 255)"),
+            new GameCharacter(700, 50, width, width, "rgb(0, 0, 255)", 3),
 
         ];
 
