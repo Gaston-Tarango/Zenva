@@ -31,10 +31,12 @@
             }
 
             moveVertically() {
+                if (this.y < screenHeight)
                 this.y += this.speed;
             }
 
             moveHorizontally() {
+                if (this.x < screenWidth)
                 this.x += this.speed;
             }
         }
