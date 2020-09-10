@@ -31,7 +31,7 @@
             }
 
             moveVertically() {
-                if (this.y > screenHeight - 100){
+                if (this.y > screenHeight - 100 || this.y < 50){
                     this.speed = -this.speed;
                 }
                 this.y += this.speed;
