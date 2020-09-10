@@ -31,7 +31,9 @@
             }
 
             moveVertically() {
-                if (this.y < screenHeight)
+                if (this.y > screenHeight - 100){
+                    this.speed = -this.speed;
+                }
                 this.y += this.speed;
             }
 
@@ -60,7 +62,7 @@
         };
 
         var update = function() {
-            enemies[0].move(0,2);
+            enemies[0].moveVertically(0,2);
         };
         var step = function () {
             update();
