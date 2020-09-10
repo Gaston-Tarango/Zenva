@@ -45,11 +45,11 @@
 
         var rectangle = new GameCharacter(50, 50, 50, 50, "rgb(0, 0, 255)", 2);
 
-        var enemies = [
-            new GameCharacter(200, 50, width, width, "rgb(0, 0, 255)", 2),
-            new GameCharacter(450, screenHeight - 100, width, width, "rgb(0, 0, 255)", 2),
-            new GameCharacter(700, 50, width, width, "rgb(0, 0, 255)", 3),
 
+        var enemies = [
+            new GameCharacter (200, 225, width, width, "rgb(0, 0, 255)", 2),
+            new GameCharacter (450, screenHeight - 100, width, width, "rgb(0, 0, 255)", 3),
+            new GameCharacter (700, 50, width, width, "rgb(0, 0, 255)", 4)
         ];
 
         var draw = function() {
@@ -62,7 +62,10 @@
         };
 
         var update = function() {
-            enemies[0].moveVertically(0,2);
+            enemies.forEach(function (element) {
+                element.moveVertically()
+            })
+            enemies[0].moveVertically();
         };
         var step = function () {
             update();
