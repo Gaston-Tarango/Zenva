@@ -52,14 +52,30 @@
             new GameCharacter (700, 50, width, width, "rgb(0, 0, 255)", 4)
         ];
 
+        JavaScript
         var draw = function() {
             ctx.clearRect(0, 0, screenWidth, screenHeight);
+
+            ctx.fillStyle = player.color;
+            ctx.fillRect(player.x, player.y, player.width, player.height);
 
             enemies.forEach(function(element){
                 ctx.fillStyle = element.color;
                 ctx.fillRect(element.x, element.y, element.width, element.height);
             });
         };
+
+        var draw = function() {
+            ctx.clearRect(0, 0, screenWidth, screenHeight);
+
+            ctx.fillStyle = player.color;
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+
+            enemies.forEach(function(element){
+                ctx.fillStyle = element.color;
+                ctx.fillRect(element.x, element.y, element.width, element.height);
+            });
+        }
 
         var update = function() {
             enemies.forEach(function (element) {
